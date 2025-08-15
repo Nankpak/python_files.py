@@ -1,3 +1,4 @@
+#python juxtaposition of data type
 questions = ('Q1. bool + bool is =?',
              'Q2. bool + int is =?',
 	     'Q3. bool + float is =?',
@@ -35,7 +36,7 @@ guesses = []
 option_index = 0
 score = 0
 for question in questions:
-	print('----------------------------------')
+	print('------------------------------------')
 	print(question)
 	for option in options[option_index]:
 		print(option)

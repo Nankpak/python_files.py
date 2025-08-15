@@ -1,4 +1,4 @@
-#quiz for everyone
+#quiz program
 questions = ('who is the first president of Nigeria?',
            'who is the first man on earth?',
            'who is the strongest man in the bible?',
