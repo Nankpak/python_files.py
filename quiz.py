@@ -33,11 +33,11 @@ for question in questions:
 	question_num += 1
 print('answer: ', end ="")
 for answer in answers:
-	print(answer)
+	print(answer, end='')
 print()
-print('guesses: ', end="")
+print('guesses: ')
 for guess in guesses:
-	print(guess)
+	print(guess, end=(''))
 print()
 score = score /len(question)*100
 print(f'your score is {score}')

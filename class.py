@@ -14,4 +14,4 @@ class Animal:
 animal_1 = Animal('monkey',True,'female')
 animal_1.eat()
 animal_1.walk()
-print(animal_1.alive)
+print('isalive',animal_1.alive)
