@@ -39,4 +39,3 @@ for student,score in students_scores.items():
           elif 0 <= score <= 29:
              grade['F'].append((student,score))
              print(grade)
-

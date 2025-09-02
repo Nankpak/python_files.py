@@ -20,28 +20,24 @@ students_scores = {
       "Victoria": 68,
       "Samuel": 38
  }
-new = {}
-for i,k in students_scores.items():
-    if 70 <= k <= 100:
-       new.update({i:k})
-       print(i,k)
-    elif 60<=k<=69:
-       new.update({i:k})
-       print('60-69')
-       print(i,k)
-    elif 50<=k<=59:
-       new.update({i:k})
-       print('50-59')
-       print(i,k)
-    elif 40 <=k<=49:
-       new.update({i:k})
-       print('40-49')
-       print(i,k)
-    elif 30 <=k<=39:
-       new.update({i:k})
-       print('30-39')
-       print(i,k)
-    elif 0<=k<=29:
-       new.update({i:k})
-       print('0-29')
-       print(i,k)
+new = {'A':[],'B':[],'C':[],'D':[],'E':[],'F':[]}
+db = list(students_scores.items())
+a,b = db[0]
+j = 0
+while j < len(db):
+    a,b = db[j]
+    if 70 <= b <=100:
+       new['A'].append((a,b))
+    if 60 <= b <= 69:
+       new['B'].append((a,b))
+    if 50 <= b <=59:
+       new['C'].append((a,b))
+    if 40 <= b <= 49:
+       new['D'].append((a,b))
+    if 30 <= b <= 39:
+       new['E'].append((a,b))
+    if 0 <= b <= 29:
+       new['E'].append((a,b))
+       print(new)
+    j += 1
+    break
